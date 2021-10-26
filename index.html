@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <!-- <link href="http://fonts.cdnfonts.com/css/bodoniMT" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/bodoni" rel="stylesheet"> -->
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <!-- SEO meta -->
+    <title>Scroll Animation Web</title>
+    <!--<meta property="og:image" content="https://www.briphy.com/storage/images/preview.png"/>-->
+    <!-- naver SEO -->
+    <meta name="naver-site-verification" content="8d55e05b796b2b390c7e2f95acf71f37231988a0" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-172113052-1"></script> -->
+    <!-- Channel Plugin Scripts -->
+    <link rel="stylesheet" href="index.css">
+    <script>
+    // (function() {
+    //   var w = window;
+    //   if (w.ChannelIO) {
+    //     return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    //   }
+    //   var ch = function() {
+    //     ch.c(arguments);
+    //   };
+    //   ch.q = [];
+    //   ch.c = function(args) {
+    //     ch.q.push(args);
+    //   };
+    //   w.ChannelIO = ch;
+    //   function l() {
+    //     if (w.ChannelIOInitialized) {
+    //       return;
+    //     }
+    //     w.ChannelIOInitialized = true;
+    //     var s = document.createElement('script');
+    //     s.type = 'text/javascript';
+    //     s.async = true;
+    //     s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+    //     s.charset = 'UTF-8';
+    //     var x = document.getElementsByTagName('script')[0];
+    //     x.parentNode.insertBefore(s, x);
+    //   }
+    //   if (document.readyState === 'complete') {
+    //     l();
+    //   } else if (window.attachEvent) {
+    //     window.attachEvent('onload', l);
+    //   } else {
+    //     window.addEventListener('DOMContentLoaded', l, false);
+    //     window.addEventListener('load', l, false);
+    //   }
+    // })();
+    // ChannelIO('boot', {
+    //   "pluginKey": "a9c0387e-c4f4-4d52-9cf0-8be80cccbea3"
+    // });
+  </script>
+  <!-- End Channel Plugin -->
+  <!-- Facebook Pixel Code -->
+  <script>
+    // !function(f,b,e,v,n,t,s)
+    // {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    // n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    // if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    // n.queue=[];t=b.createElement(e);t.async=!0;
+    // t.src=v;s=b.getElementsByTagName(e)[0];
+    // s.parentNode.insertBefore(t,s)}(window, document,'script',
+    // 'https://connect.facebook.net/en_US/fbevents.js');
+    // fbq('init', '496404461731556');
+    // fbq('track', 'PageView');
+    </script>
+    <!--// <noscript><img height="1" width="1" style="display:none"
+    // src="https://www.facebook.com/tr?id=496404461731556&ev=PageView&noscript=1"
+    // /></noscript>
+    End Facebook Pixel Code -->
+  </head>
+  <body class="before-load">
+    <div class="loading">
+      <svg class="loading-circle">
+        <circle cx="50%" cy="50%" r="40"></circle>
+      </svg>
+    </div>
+    
+      <div id="root"></div>
+      <section id="scroll-section-0">
+        <div class="h1title">
+          <div class="large">BRIPHY</div>
+          <div class="small">The New Solution for&nbsp;<br/>Photo/Videography</div>
+        </div>
+        <div class="sticky-elem sticky-elem-canvas">
+          <canvas id="video-canvas-0" width="1024" height="576"></canvas>
+        </div>
+        <div class="sticky-elem-scrollbox">
+          <div class="scroll-bar">
+            <div class="scroll-ball"></div>
+          </div>
+          <div class="scroll-text">
+            스크롤 해주세요.
+          </div>
+        </div>
+      </section>
+      <section id="scroll-section-1">
+        <div class="flex-box">
+          <div class="solution-title">
+            Scalable<br/>
+            Production<br/>
+            Solution
+          </div>
+          <div class="flex-box-canvas">
+            <canvas id="jenga-blend-canvas"></canvas>
+          </div>
+
+          <div class="solution-part">
+            <div class="solution-why-wrapper">
+              <div class="solution-message-why-title">Why Briphy?</div>
+                <ul class="solution-message-why-list">
+                  <li>
+                    <img src="landing/solution/sw1.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">SaaS 제공</div>
+                      <div class="why-explanation">실시간 현황 트래킹, 스케줄링, 커뮤니케이션, 대금 지급 업무 자동화</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="landing/solution/sw2.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">가격 단가절감 효과</div>
+                      <div class="why-explanation">대량 물량과 경로 최적화를 통한 비용 절감</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="landing/solution/sw3.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">전국 네트워크</div>
+                      <div class="why-explanation">전국 네트워크를 통해 어디서든 출장비 무료</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="landing/solution/sw4.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">퀄리티 컨트롤</div>
+                      <div class="why-explanation">공급자 검증 및 프로젝트 매니지먼트 시스템을 통한 결과물 보장</div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="solution-how-wrapper">
+              <div class="solution-message-how-title">How it works?</div>
+                <ul class="solution-message-how-list">
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/sh1.png"/> 
+                      <img src="landing/solution/arrow.png"/>
+                    </div>
+                    <div class="how-text">문의 접수</div>
+                  </li>
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/sh2.png"/> 
+                      <img src="landing/solution/arrow.png"/>
+                    </div>
+                    <div class="how-text">전담 매니저 배정 및 상담</div>
+                  </li>
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/sh3.png"/> 
+                      <img src="landing/solution/arrow.png"/>
+                    </div>
+                    <div class="how-text">업무 프로세스 및 촬영 가이드라인 수립</div>
+                  </li>
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/sh4.png"/> 
+                    </div>
+                    <div class="how-text">간편한 프로젝트 관리 소프트웨어(SaaS) 제공</div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex-box-mo">
+          <div class="solution-title">
+            Scalable<br/>
+            Production<br/>
+            Solution
+          </div>
+          <img src="./landing/mobile/jenga.png"/>
+          
+          <div class="solution-message">
+            <div class="solution-message-wrapper">
+              <div class="solution-message-why">
+                <div class="solution-message-why-title">Why Briphy?</div>
+                <ul class="solution-message-why-list">
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/sw1.png"/> <span>SaaS 제공</span></div>
+                    <div class="why-explanation-mo">실시간 현황 트래킹, 스케줄링, 커뮤니케이션, 대금 지급 업무 자동화</div>
+                  </li>
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/sw2.png"/> <span>가격 단가절감 효과</span></div>
+                    <div class="why-explanation-mo">대량 물량과 경로 최적화를 통한 비용 절감</div>
+                  </li>
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/sw3.png"/> <span>전국 네트워크</span></div>
+                    <div class="why-explanation-mo">전국 네트워크를 통해 어디서든 출장비 무료</div>
+                  </li>
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/sw4.png"/> <span>퀄리티 컨트롤</span></div>
+                    <div class="why-explanation-mo">공급자 검증 및 프로젝트 매니지먼트 시스템을 통한 결과물 보장</div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="solution-message-how">
+                <div class="solution-message-how-title">How it works?</div>
+                <ul class="solution-message-how-list">
+                  <li>
+                    <div class="how-head-mo"><span><img src="landing/solution/sh1.png"/><img src="landing/solution/arrow.png"/></span><span class="how-explanation-mo"></class>문의 접수</span></div>
+                  </li>
+                  <li>
+                    <div class="how-head-mo"><span><img src="landing/solution/sh2.png"/><img src="landing/solution/arrow.png"/></span><span class="how-explanation-mo">전담 매니저 배정 및 상담</span></div>
+                  </li>
+                  <li>
+                    <div class="how-head-mo"><span><img src="landing/solution/sh3.png"/><img src="landing/solution/arrow.png"/></span><span class="how-explanation-mo">업무 프로세스 및 촬영 가이드라인 수립</span></div>
+                  </li>
+                  <li>
+                    <div class="how-head-mo"><img src="landing/solution/sh4.png"/><span class="how-explanation-mo">간편한 프로젝트 관리 소프트웨어(SaaS) 제공</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="scroll-section-2">
+        <div class="black-background"></div>
+        <div class="flex-box">
+          <div class="solution-title">
+            Premium<br/>
+            Matching<br/>
+            Solution
+          </div>
+          <div class="flex-box-canvas">
+            <canvas id="light-blend-canvas"></canvas>
+          </div>
+
+          <div class="solution-part">
+            <div class="solution-why-wrapper">
+              <div class="solution-message-why-title">Why Briphy?</div>
+                <ul class="solution-message-why-list">
+                  <li>
+                    <img src="landing/solution/pw1.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">맞춤형 공급자 추천</div>
+                      <div class="why-explanation">목적과 예산에 맞춘 최적의 전문가 매칭</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="landing/solution/pw2.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">무료 견적 서비스</div>
+                      <div class="why-explanation">합리적이고 투명한 무료 견적 상담</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="landing/solution/pw3.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">전담 매니저 시스템</div>
+                      <div class="why-explanation">제작 전반에 대한 관리 및 커뮤니케이션 지원</div>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="landing/solution/pw4.png"/> 
+                    <div class="why-text">
+                      <div class="why-head">제작 컨설팅</div>
+                      <div class="why-explanation">최선의 결과물을 위한 종합 컨설팅 제공</div>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+            <div class="solution-how-wrapper">
+              <div class="solution-message-how-title">How it works?</div>
+                <ul class="solution-message-how-list">
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/ph1.png"/> 
+                      <img src="landing/solution/arrow.png"/>
+                    </div>
+                    <div class="how-text">문의 접수</div>
+                  </li>
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/ph2.png"/> 
+                      <img src="landing/solution/arrow.png"/>
+                    </div>
+                    <div class="how-text">프로젝트 매니지먼트 컨설팅</div>
+                  </li>
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/ph3.png"/> 
+                      <img src="landing/solution/arrow.png"/>
+                    </div>
+                    <div class="how-text">맞춤형 전문가 매칭</div>
+                  </li>
+                  <li>
+                    <div class="how-img">
+                      <img src="landing/solution/ph4.png"/> 
+                    </div>
+                    <div class="how-text">계약 및 결제 진행</div>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex-box-mo">
+          <div class="solution-title">
+            Premium<br/>
+            Matching<br/>
+            Solution
+          </div>
+          <img class="flex-box-mo-bulb" src="./landing/mobile/bulb.png"/>
+          <div class="solution-message">
+            <div class="solution-message-wrapper">
+              <div class="solution-message-why">
+                <div class="solution-message-why-title">Why Briphy?</div>
+                <ul class="solution-message-why-list">
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/pw1.png"/> <span>맞춤형 공급자 추천</span></div>
+                    <div class="why-explanation-mo">목적과 예산에 맞춘 최적의 전문가 매칭</div>
+                  </li>
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/pw2.png"/> <span>무료 견적 서비스</span></div>
+                    <div class="why-explanation-mo">합리적이고 투명한 무료 견적 상담</div>
+                  </li>
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/pw3.png"/> <span>전담 매니저 시스템</span></div>
+                    <div class="why-explanation-mo">제작 전반에 대한 관리 및 커뮤니케이션 지원</div>
+                  </li>
+                  <li>
+                    <div class="why-head-mo"><img src="landing/solution/pw4.png"/> <span>제작 컨설팅</span></div>
+                    <div class="why-explanation-mo">최선의 결과물을 위한 종합 컨설팅 제공</div>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="solution-message-how">
+                <div class="solution-message-how-title">How it works?</div>
+                <ul class="solution-message-how-list">
+                  <li>
+                    <div class="how-head-mo"><span><img src="landing/solution/ph1.png"/><img src="landing/solution/arrow.png"/></span><span class="how-explanation-mo">문의 접수</span></div>
+                  </li>
+                  <li>
+                    <div class="how-head-mo"><span><img src="landing/solution/ph2.png"/><img src="landing/solution/arrow.png"/></span><span class="how-explanation-mo">프로젝트 매니지먼트 컨설팅</span></div>
+                  </li>
+                  <li>
+                    <div class="how-head-mo"><span><img src="landing/solution/ph3.png"/><img src="landing/solution/arrow.png"/></span><span class="how-explanation-mo">맞춤형 전문가 매칭</span></div>
+                  </li>
+                  <li>
+                    <div class="how-head-mo"><img src="landing/solution/ph4.png"/><span class="how-explanation-mo">계약 및 결제 진행</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="diagonal-bottom"></div>
+      </section>
+      <section id="scroll-section-3">
+        <div class="case-back"></div>
+        <div class="case-wrapper">
+          <div class="case-title">
+            Case<br/>
+            Study
+          </div>
+
+          <div class="case-flex">
+            <div class="case-menu">
+              <div class="case-scale-title">대량 촬영 <br/>솔루션</div>
+              <div class="case-content case-scale active" onclick="caseSelect(0);">여기어때</div>
+              <div class="case-content case-scale" onclick="caseSelect(1);">망고 플레이트</div>
+              <div class="case-content case-scale" onclick="caseSelect(2);">희망브릿지</div>
+              <div class="case-content case-scale" onclick="caseSelect(3);">지냄</div>
+      
+              <div class="case-premium-title">프리미엄 매칭 <br/>솔루션</div>
+              <div class="case-content case-premium" onclick="caseSelect(4);">Avengers Station</div>
+              <div class="case-content case-premium" onclick="caseSelect(5);">AIMS</div>
+              <div class="case-content case-premium" onclick="caseSelect(6);">Ohora</div>
+            </div>
+            <div class="case-study">
+              <div class="case-study-image">
+                <video class="case-video" src="" type="video/mp4" autoPlay playsInline loop ></video>
+                <div class="case-study-image-number-wrapper">
+                  <span class="case-study-image-number active" onclick="changeImage(0);">1</span>
+                  <span class="case-study-image-number" onclick="changeImage(1);">2</span>
+                  <span class="case-study-image-number"onclick="changeImage(2);">3</span>
+                </div>
+              </div>
+
+              <div class="case-study-contents">
+                <div class="case-study-name">
+                  <div class="case-study-name-nick">
+                    대한민국 1등 종합 숙박앱
+                  </div>
+                  <div class="case-study-name-title">
+                    여기어때
+                  </div>
+                </div>
+                <div class="case-study-needs">
+                  <div class="case-study-needs-title">
+                    클라이언트 니즈
+                  </div>
+                  <p class="case-study-needs-content">
+                    서울·경기·인천 지역 가맹 숙박업소의 내 외관 및 부대시설 촬영
+                  </p>
+                </div>
+                <div class="case-study-offer">
+                  <div class="case-study-offer-title">
+                    제공 내역
+                  </div>
+                  <p class="case-study-offer-content">
+                    여기어때 가이드라인에 맞춰 촬영 진행 및 결과물 전달
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="diagonal-bottom"></div>
+      </section>
+      <section id="scroll-section-4">
+        <div class="diagonal"></div>
+        <div class="grid-wrapper">
+          <div class="section-title">
+            <b>Our Partners</b>
+          </div>
+          <div class="grid-client">
+            <img src="landing/client/1.png"/>
+            <img src="landing/client/2.png"/>
+            <img src="landing/client/3.png"/>
+            <img src="landing/client/4.png"/>
+            <img src="landing/client/5.png"/>
+            <img src="landing/client/6.png"/>
+            <img src="landing/client/7.png"/>
+            <img src="landing/client/8.png"/>
+            <img src="landing/client/9.png"/>
+            <img src="landing/client/10.png"/>
+            <img src="landing/client/11.png"/>
+            <img src="landing/client/12.png"/>
+            <img src="landing/client/13.png"/>
+            <img src="landing/client/14.png"/>
+            <img src="landing/client/15.png"/>
+            <img src="landing/client/16.png"/>
+            <img src="landing/client/17.png"/>
+            <img src="landing/client/18.png"/>
+            <img src="landing/client/19.png"/>
+          </div>
+        </div>
+        
+      </section>
+    
+      <section id="scroll-section-5">
+        <div class="diagonal"></div>
+        <video class="portfolio-video" src="" type="video/mp4" autoPlay playsInline loop ></video>
+        <div class="category-wrapper">
+          <div class="category-title">
+            Portfolio<br/>
+            Category
+          </div>
+          <div class="category-contents">
+            <div class="category-photo-title">Photo</div>
+              <div class="category-content category-photo active" onclick="categorySelect('photo',0);">인테리어</div>
+              <div class="category-content category-photo" onclick="categorySelect('photo',1);">음식</div>
+              <div class="category-content category-photo" onclick="categorySelect('photo',2);">제품</div>
+              <div class="category-content category-photo last" onclick="categorySelect('photo',3);">행사</div>
+              <!-- <div class="category-content category-photo" onclick="categorySelect('photo',4);">패션</div>
+              <div class="category-content category-photo last" onclick="categorySelect('photo',5);">프로필</div> -->
+
+            <div class="category-video-title">Video</div>
+              <div class="category-content category-video" onclick="categorySelect('video',0);">기업홍보</div>
+              <div class="category-content category-video" onclick="categorySelect('video',1);">바이럴</div>
+              <div class="category-content category-video" onclick="categorySelect('video',2);">인터뷰</div>
+              <div class="category-content category-video" onclick="categorySelect('video',3);">제품</div>
+              <div class="category-content category-video" onclick="categorySelect('video',4);">모션그래픽</div>
+              <div class="category-content category-video" onclick="categorySelect('video',5);">행사</div>
+          </div>
+          <div class="category-contents-mo">
+            <div class="category-photo-title-mo">Photo</div>
+            <div class="category-photo-content-mo">
+              <div class="category-content-mo category-photo-mo active" onclick="categorySelect('photo',0);">인테리어</div>
+              <div class="category-content-mo category-photo-mo" onclick="categorySelect('photo',1);">음식</div>
+              <div class="category-content-mo category-photo-mo" onclick="categorySelect('photo',2);">제품</div>
+              <div class="category-content-mo category-photo-mo" onclick="categorySelect('photo',3);">행사</div>
+            </div>
+            
+            <div class="category-video-title-mo">Video</div>
+            <div class="category-video-content-mo">
+              <div class="category-content-mo category-video-mo" onclick="categorySelect('video',0);">기업홍보</div>
+              <div class="category-content-mo category-video-mo" onclick="categorySelect('video',1);">바이럴</div>
+              <div class="category-content-mo category-video-mo" onclick="categorySelect('video',2);">인터뷰</div>
+              <div class="category-content-mo category-video-mo" onclick="categorySelect('video',3);">제품</div>
+              <div class="category-content-mo category-video-mo" onclick="categorySelect('video',4);">모션그래픽</div>
+              <div class="category-content-mo category-video-mo" onclick="categorySelect('video',5);">행사</div>
+            </div>
+          </div>
+
+          </div>
+      </section>
+      
+      <footer class="pc-footer">
+        <div class="footer-items">
+            <ul class="footer-items-item">
+                <li><img class="footer-items-item-logo" src="landing/footerLogo.svg" /></li>
+            </ul>
+            <ul class="footer-items-item">
+                <li>(주)브리엑스</li>
+                <li>대표 : 신영욱<span style='margin-left:30px;'>개인정보보호책임</span> : 개발팀</li>
+                <li>주소 : 서울시 중구 퇴계로 36길 2, 424호</li>
+                <li>이메일 : contact@briphy.com</li>
+            </ul>
+            <ul class="footer-items-item">
+                <li>&nbsp;</li>
+                <li>전화 : 02-6925-4411</li>
+                <li>사업자등록번호 : 822-87-01977</li>
+                <li>통신판매번호 : 2021-서울중구-0223</li>
+            </ul>
+            <ul class="footer-items-item">
+                <li>고객센터</li>
+                <li>상담시간 10:00 ~ 18:00</li>
+                <li>점심시간 13:00 ~ 14:00</li>
+                <li>주말/공휴일은 쉽니다.</li>
+            </ul>
+            <ul class="footer-items-item">
+                <li><a target='_blank' href='/privacy'>개인정보</a></li>
+                <li><a target='_blank' href='/terms'>이용약관</a></li>
+                <li class="footer-items-item-laptopsns">
+                  <img height={26} src="landing/instagram.svg" alt="인스타그램" />
+                  <!-- <img height={26} src="landing/kakao-channel.svg" alt="카카오채널"/> -->
+                </li>
+            </ul>
+            <ul class="footer-items-item">
+                <li><img height="32px" src='landing/instagram.svg' onclick="window.open('https://www.instagram.com/briphy_official')" alt="인스타그램" /></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <span>Copyright &copy; 2021 briphy. All rights reserved.</span>
+        </div>
+      </footer>
+      <footer class="mo-footer">
+        <div class="mo-footer-items">
+          <div class="mo-footer-items-left">
+            <li><img class="mo-footer-items-left" src="landing/footerLogo.svg" /></li>
+            <li><a target='_blank' href='/privacy'>개인정보</a></li>
+            <li><a target='_blank' href='/terms'>이용약관</a></li>
+          </div>
+          <div class="mo-footer-items-right">
+            <li class="mo-footer-items-right-title">(주)브리엑스</li>
+            <li>대표: 신영욱<span style="margin-left:10px;">개인정보보호책임</span>: 개발팀</li>
+            <li>주소: 서울시 중구 퇴계로 36길 2, 424호</li>
+            <li>이메일: contact@briphy.com</li>
+            <li>사업자등록번호: 822-87-01977</li>
+            <li>통신판매번호: 2021-서울중구-0223</li>
+            <li>전화: 02-6925-4411</li>
+            <li class="mo-footer-items-right-title customerCenter">고객센터</li>
+            <li>상담시간 10:00 ~ 18:00</li>
+            <li>점심시간 13:00 ~ 14:00</li>
+            <li>주말/공휴일은 쉽니다.</li>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>Copyright &copy; 2021 briphy. All rights reserved.</span>
+        </div>
+      </footer>
+    
+    <script defer src="index.js"></script>
+  </body>
+</html>
