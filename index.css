@@ -320,7 +320,7 @@ nav {
   margin: 14.6vh 0 0 0;
   width: 85%;
   height: 60%;
-  background-image : url('../landing/case/howabouthere/1.png');
+  background-image : url('./landing/case/howabouthere/1.png');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -471,7 +471,7 @@ nav {
 /* section4 start */
 #scroll-section-5 {
   background-color: white;
-  background-image : url('../landing/category/interior.jpg');
+  background-image : url('./landing/category/interior.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

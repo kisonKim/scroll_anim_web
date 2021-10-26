@@ -642,17 +642,17 @@ function categorySelect(type,num) {
     moPhotoCategory[num].classList.add('active');
     videoTag.setAttribute('src','');
     if(num===0){
-      section5.style.backgroundImage="url('../landing/category/interior.jpg')";
+      section5.style.backgroundImage="url('./landing/category/interior.jpg')";
     }else if(num===1){
-      section5.style.backgroundImage="url('../landing/category/food.png')";
+      section5.style.backgroundImage="url('./landing/category/food.png')";
     }else if(num===2){
-      section5.style.backgroundImage="url('../landing/category/product.jpg')";
+      section5.style.backgroundImage="url('./landing/category/product.jpg')";
     }else if(num===3){
-      section5.style.backgroundImage="url('../landing/category/event.jpg')";
+      section5.style.backgroundImage="url('./landing/category/event.jpg')";
     }else if(num===4){
-      section5.style.backgroundImage="url('../landing/fashion.jpg')";
+      section5.style.backgroundImage="url('./landing/fashion.jpg')";
     }else if(num===5){
-      section5.style.backgroundImage="url('../landing/profile.jpg')";
+      section5.style.backgroundImage="url('./landing/profile.jpg')";
     }
     
   }else if(type==='video'){
@@ -663,23 +663,23 @@ function categorySelect(type,num) {
     moVideoCategory[num].classList.add('active');
 
     if(window.innerWidth<=800){
-      section5.style.backgroundImage="url('../landing/category/videoBack.jpg')";
+      section5.style.backgroundImage="url('./landing/category/videoBack.jpg')";
     }else{
-      section5.style.backgroundImage="url('../landing/category/black.png')";
+      section5.style.backgroundImage="url('./landing/category/black.png')";
     }
 
     if(num===0){
-      videoTag.setAttribute('src', '../landing/category/video/company.mp4');
+      videoTag.setAttribute('src', './landing/category/video/company.mp4');
     }else if(num===1){
-      videoTag.setAttribute('src', '../landing/category/video/viral.mp4');
+      videoTag.setAttribute('src', './landing/category/video/viral.mp4');
     }else if(num===2){
-      videoTag.setAttribute('src', '../landing/category/video/interview.mp4');
+      videoTag.setAttribute('src', './landing/category/video/interview.mp4');
     }else if(num===3){
-      videoTag.setAttribute('src', '../landing/category/video/product.mp4');
+      videoTag.setAttribute('src', './landing/category/video/product.mp4');
     }else if(num===4){
-      videoTag.setAttribute('src', '../landing/category/video/motion.mp4');
+      videoTag.setAttribute('src', './landing/category/video/motion.mp4');
     }else if(num===5){
-      videoTag.setAttribute('src', '../landing/category/video/event.mp4');
+      videoTag.setAttribute('src', './landing/category/video/event.mp4');
     }
   }
 }
@@ -727,24 +727,24 @@ const nickArr = [
 
 const caseImageArr = [
   [
-    "../landing/case/howabouthere/1.png",
-    "../landing/case/howabouthere/2.png",
-    "../landing/case/howabouthere/3.png",
+    "./landing/case/howabouthere/1.png",
+    "./landing/case/howabouthere/2.png",
+    "./landing/case/howabouthere/3.png",
   ],
   [
-    "../landing/case/mp/1.png",
-    "../landing/case/mp/2.png",
-    "../landing/case/mp/3.png",
+    "./landing/case/mp/1.png",
+    "./landing/case/mp/2.png",
+    "./landing/case/mp/3.png",
   ],
   [
-    "../landing/case/happy/1.png",
-    "../landing/case/happy/2.png",
-    "../landing/case/happy/3.png"
+    "./landing/case/happy/1.png",
+    "./landing/case/happy/2.png",
+    "./landing/case/happy/3.png"
   ],
   [
-    "../landing/case/jienem/1.png",
-    "../landing/case/jienem/2.png",
-    "../landing/case/jienem/3.png"
+    "./landing/case/jienem/1.png",
+    "./landing/case/jienem/2.png",
+    "./landing/case/jienem/3.png"
   ]
 ]
 
@@ -778,22 +778,22 @@ function caseSelect(num) {
   }
 
   if(num===0){  
-  caseImage.style.backgroundImage="url('../landing/case/howabouthere/1.png')";
+  caseImage.style.backgroundImage="url('./landing/case/howabouthere/1.png')";
   }else if(num===1){
-    caseImage.style.backgroundImage="url('../landing/case/mp/1.png')";
+    caseImage.style.backgroundImage="url('./landing/case/mp/1.png')";
   }else if(num===2){
-    caseImage.style.backgroundImage="url('../landing/case/happy/1.png')";
+    caseImage.style.backgroundImage="url('./landing/case/happy/1.png')";
   }else if(num===3){
-    caseImage.style.backgroundImage="url('../landing/case/jienem/1.png')";
+    caseImage.style.backgroundImage="url('./landing/case/jienem/1.png')";
   }else if(num===4){
     caseImage.style.backgroundImage="url('')";
-    caseVideo.setAttribute('src', '../landing/case/avengers.mp4');
+    caseVideo.setAttribute('src', './landing/case/avengers.mp4');
   }else if(num===5){
     caseImage.style.backgroundImage="url('')";
-    caseVideo.setAttribute('src', '../landing/case/aims.mp4');
+    caseVideo.setAttribute('src', './landing/case/aims.mp4');
   }else if(num===6){
     caseImage.style.backgroundImage="url('')";
-    caseVideo.setAttribute('src', '../landing/case/ohora.mp4');
+    caseVideo.setAttribute('src', './landing/case/ohora.mp4');
   }
   caseNick.innerHTML = `${nickArr[num]}`;
   caseName.innerHTML = `${caseTitle[num]}`;
